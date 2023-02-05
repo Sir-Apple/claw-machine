@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/3DClaw.fbx-d6512664a6bd84e0885c1891017c787c.scn"
+path="res://.import/3DClaw.glb-df45b27d49f75e20187250c20785f48b.scn"
 
 [deps]
 
-source_file="res://3DModels/3DClaw.fbx"
-dest_files=[ "res://.import/3DClaw.fbx-d6512664a6bd84e0885c1891017c787c.scn" ]
+source_file="res://3DModels/3DClaw.glb"
+dest_files=[ "res://.import/3DClaw.glb-df45b27d49f75e20187250c20785f48b.scn" ]
 
 [params]
 
@@ -16,14 +16,14 @@ nodes/root_name="Scene Root"
 nodes/root_scale=1.0
 nodes/custom_script=""
 nodes/storage=0
-nodes/use_legacy_names=false
+nodes/use_legacy_names=true
 materials/location=1
-materials/storage=1
-materials/keep_on_reimport=true
+materials/storage=0
+materials/keep_on_reimport=false
 meshes/octahedral_compression=true
 meshes/compress=4286
 meshes/ensure_tangents=true
-meshes/storage=0
+meshes/storage=1
 meshes/light_baking=0
 meshes/lightmap_texel_size=0.1
 skins/use_named_skins=true

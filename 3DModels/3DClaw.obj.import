@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/3DClaw.obj-24d4655a9186f62c13055032d207d858.mesh"
+
+[deps]
+
+files=[ "res://.import/3DClaw.obj-24d4655a9186f62c13055032d207d858.mesh" ]
+
+source_file="res://3DModels/3DClaw.obj"
+dest_files=[ "res://.import/3DClaw.obj-24d4655a9186f62c13055032d207d858.mesh", "res://.import/3DClaw.obj-24d4655a9186f62c13055032d207d858.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
