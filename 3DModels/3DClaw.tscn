@@ -4,3 +4,6 @@
 
 [node name="3DClaw" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.70814, 0 )
+
+[node name="Cube001" parent="." index="1"]
+transform = Transform( 0.157135, 0, 0, 0, 1.1577, 0.108045, 0, -1.1577, 0.108045, -0.000781915, 0.421125, 0.196739 )
