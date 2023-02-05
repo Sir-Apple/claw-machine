@@ -1,9 +1,58 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://3DModels/3DClaw.glb" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/_ClawScripts.gd" type="Script" id=2]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( -0.165231, -2.6889, -1.44438, 0.165035, -2.6889, -1.44438, -0.165231, -2.6889, -1.11439, -1, -1.49808, 3.10116, -1, -0.498227, 0.0274435, -1, 0.00196409, 0.0274435, 1, -0.498227, 0.0274435, 1, -1.49808, 3.10116, 0.165035, -2.6889, -1.11439, 1, 0.00196409, 0.0274435, -1, -1.49808, 5.10161, -1, 0.00196409, 5.10161, 1, -1.49808, 5.10161, 1, 0.00196409, 5.10161 )
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( -0.165232, -2.6889, -1.49159, 0.165034, -2.6889, -1.49159, -0.165232, -2.6889, -1.1616, -1, -1.49808, 3.05395, -1, -0.498227, -0.019771, -1, 0.00196409, -0.019771, 0.999999, -0.498227, -0.019771, 0.999999, -1.49808, 3.05395, 0.165034, -2.6889, -1.1616, 0.999999, 0.00196409, -0.019771, -1, -1.49808, 5.05439, -1, 0.00196409, 5.05439, 0.999999, -1.49808, 5.05439, 0.999999, 0.00196409, 5.05439 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( -0.165231, -2.6889, -1.48029, 0.165035, -2.6889, -1.48029, -0.165231, -2.6889, -1.1503, -1, -1.49808, 3.06525, -1, -0.498227, -0.0084666, -1, 0.00196409, -0.0084666, 1, -0.498227, -0.0084666, 1, -1.49808, 3.06525, 0.165035, -2.6889, -1.1503, 1, 0.00196409, -0.0084666, -1, -1.49808, 5.0657, -1, 0.00196409, 5.0657, 1, -1.49808, 5.0657, 1, 0.00196409, 5.0657 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+points = PoolVector3Array( -0.165233, -2.6889, -1.48029, 0.165033, -2.6889, -1.48029, -0.165233, -2.6889, -1.1503, -1, -1.49808, 3.06525, -1, -0.498227, -0.0084666, -1, 0.00196409, -0.0084666, 0.999998, -0.498227, -0.0084666, 0.999998, -1.49808, 3.06525, 0.165033, -2.6889, -1.1503, 0.999998, 0.00196409, -0.0084666, -1, -1.49808, 5.0657, -1, 0.00196409, 5.0657, 0.999998, -1.49808, 5.0657, 0.999998, 0.00196409, 5.0657 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "Clawler"
+length = 0.5
 
 [node name="3DClaw" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.70814, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.70643, 0 )
+script = ExtResource( 2 )
+
+[node name="Cube" parent="." index="0"]
+transform = Transform( 0.101175, 0, 0, 0, 3.45757, 0, 0, 0, 0.101175, 0, 3.46213, 0 )
 
 [node name="Cube001" parent="." index="1"]
-transform = Transform( 0.157135, 0, 0, 0, 1.1577, 0.108045, 0, -1.1577, 0.108045, -0.000781915, 0.421125, 0.196739 )
+transform = Transform( 0.157131, -0.00917731, -0.000529002, 0.00100255, 1.13438, 0.110173, -0.000258159, -1.18052, 0.105872, -0.000781914, 0.421125, 0.196739 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Cube001" index="0"]
+transform = Transform( 1, 1.86265e-09, 3.49246e-10, 7.27596e-12, 1, 0, 2.32831e-10, 0, 1, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Cube002" parent="." index="2"]
+transform = Transform( -0.157135, -1.70057e-07, -1.63143e-08, -2.34043e-08, 1.1577, 0.108045, 3.22354e-10, 1.1577, -0.108045, -0.000781915, 0.421124, -0.203074 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Cube002" index="0"]
+transform = Transform( 1, 5.86198e-14, 2.55351e-15, 8.46545e-16, 1, 0, 1.11022e-16, 0, 1, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="Cube003" parent="." index="3"]
+transform = Transform( -2.09175e-08, -1.1577, 0.108045, -4.68297e-09, 1.1577, 0.108045, -0.157135, 1.19609e-07, -1.76027e-08, 0.200856, 0.421124, 0.00285844 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Cube003" index="0"]
+transform = Transform( 1, 0, 0, -4.44089e-16, 1, -7.85456e-16, 0, 4.76837e-07, 1, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="Cube004" parent="." index="4"]
+transform = Transform( 6.8059e-08, 1.1577, -0.108045, -5.61957e-08, 1.1577, 0.108045, 0.157135, -8.74037e-08, 8.54366e-08, -0.196036, 0.421124, 0.00285849 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Cube004" index="0"]
+transform = Transform( 1, 0, 0, -1.33227e-15, 1, -2.78582e-15, -5.68434e-14, 4.76837e-07, 1, 0, 0, 0 )
+shape = SubResource( 4 )
+
+[node name="Animation" type="AnimationPlayer" parent="." index="5"]
+anims/Clawler = SubResource( 5 )
