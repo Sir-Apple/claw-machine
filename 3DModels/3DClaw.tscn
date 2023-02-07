@@ -95,10 +95,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0.302338, 0.496522 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.302338, 0.496522 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -45, -0.286, 0.528 ), Vector3( -5, -0.286, 0.528 ) ]
+"values": [ Vector3( -45, -0.286, 0.528 ), Vector3( -45, -0.286, 0.528 ), Vector3( -5, -0.286, 0.528 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("Cube002:rotation_degrees")
@@ -107,10 +107,10 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0.302338, 0.496522 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.302338, 0.496522 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -45, -180, -1.20687e-05 ), Vector3( -5, -180, 0 ) ]
+"values": [ Vector3( -45, -180, -1.20687e-05 ), Vector3( -45, -180, -1.20687e-05 ), Vector3( -5, -180, 0 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("Cube003:rotation_degrees")
@@ -119,10 +119,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.302338, 0.495696 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.302338, 0.495696 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -45, 90, -2.41484e-06 ), Vector3( -5, 90, 0 ) ]
+"values": [ Vector3( -45, 90, -2.41484e-06 ), Vector3( -45, 90, -2.41484e-06 ), Vector3( -5, 90, 0 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("Cube004:rotation_degrees")
@@ -131,10 +131,10 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0.30419, 0.495607 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.30419, 0.495607 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector3( -45, -90, -2.8978e-05 ), Vector3( -5, -90, 0 ) ]
+"values": [ Vector3( -45, -90, -2.8978e-05 ), Vector3( -45, -90, -2.8978e-05 ), Vector3( -5, -90, 0 ) ]
 }
 tracks/4/type = "value"
 tracks/4/path = NodePath(".:translation")
@@ -221,7 +221,7 @@ transform = Transform( 0.101175, 0, 0, 0, 3.45757, 0, 0, 0, 0.101175, 0, 3.46213
 mesh = SubResource( 1 )
 
 [node name="Cube001" type="MeshInstance" parent="."]
-transform = Transform( 0.157131, -0.0093087, -0.000539317, 0.00102391, 1.15765, 0.108045, -0.000239574, -1.15771, 0.108043, -0.000781914, 0.421125, 0.196739 )
+transform = Transform( 0.157131, -0.00930871, -0.000539318, 0.00102391, 1.15765, 0.108045, -0.000239574, -1.15771, 0.108043, -0.000781914, 0.421125, 0.196739 )
 mesh = SubResource( 2 )
 
 [node name="Area" type="Area" parent="Cube001"]
@@ -231,7 +231,7 @@ transform = Transform( 1, -1.21072e-08, 4.65661e-10, -2.54659e-10, 1, -9.31323e-
 shape = SubResource( 7 )
 
 [node name="Cube002" type="MeshInstance" parent="."]
-transform = Transform( -0.157135, -1.70057e-07, -1.63143e-08, -2.34043e-08, 1.1577, 0.108045, 3.22354e-10, 1.1577, -0.108045, -0.000781915, 0.421124, -0.203074 )
+transform = Transform( -0.157135, -4.46074e-07, 9.44559e-09, -2.34043e-08, 1.1577, 0.108045, -3.71415e-08, 1.1577, -0.108045, -0.000781915, 0.421124, -0.203074 )
 mesh = SubResource( 3 )
 
 [node name="Area" type="Area" parent="Cube002"]
@@ -241,7 +241,7 @@ transform = Transform( 1, 1.27898e-13, 3.55271e-15, 5.55112e-16, 1, 3.72529e-09,
 shape = SubResource( 8 )
 
 [node name="Cube003" type="MeshInstance" parent="."]
-transform = Transform( -2.09175e-08, -1.1577, 0.108045, -4.68297e-09, 1.1577, 0.108045, -0.157135, 1.19609e-07, -1.76027e-08, 0.200856, 0.421124, 0.00285844 )
+transform = Transform( -2.18559e-09, -1.1577, 0.108045, -4.68299e-09, 1.1577, 0.108045, -0.157135, -1.83997e-08, -4.7228e-09, 0.200856, 0.421124, 0.00285844 )
 mesh = SubResource( 4 )
 
 [node name="Area" type="Area" parent="Cube003"]
@@ -251,7 +251,7 @@ transform = Transform( 1, 1.13687e-13, -2.13163e-14, -1.77636e-15, 1, -7.90612e-
 shape = SubResource( 9 )
 
 [node name="Cube004" type="MeshInstance" parent="."]
-transform = Transform( 6.8059e-08, 1.1577, -0.108045, -5.61957e-08, 1.1577, 0.108045, 0.157135, -8.74037e-08, 8.54366e-08, -0.196036, 0.421124, 0.00285849 )
+transform = Transform( -6.30644e-08, 1.1577, -0.108045, -5.61958e-08, 1.1577, 0.108045, 0.157135, 8.78655e-07, -4.7228e-09, -0.196036, 0.421124, 0.00285849 )
 mesh = SubResource( 5 )
 
 [node name="Area" type="Area" parent="Cube004"]
